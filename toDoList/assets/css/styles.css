@@ -1,0 +1,10 @@
+h1 {
+	color: orange;
+	text-align: center;
+}
+
+#mainContain {
+	background: blue;
+	width: 350px;
+	margin: 0 auto;
+}
