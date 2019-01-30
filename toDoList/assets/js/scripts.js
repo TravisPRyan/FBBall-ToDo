@@ -22,7 +22,7 @@ $('input[type="text"]').keypress(function(e){
 	if(e.which === 13){
 		var userInp = $(this).val();
 		$(this).val("");
-		$('ul').append("<li><span># </span>" + userInp + "</li>");
+		$('ul').append("<li><span> <i class='far fa-trash-alt'></i> </span>" +"   " + userInp + "</li>");
 	}
 });
 
