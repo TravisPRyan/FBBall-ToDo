@@ -9,8 +9,19 @@ h1 {
 	font-weight: normal;
 }
 /*#0658C7*/
+
+/*#006BB6 #BEC0C2 #F58426 knicks blue, silver, orange*/
+
+.fa-pencil-alt{
+	float: right;
+}
+
 body {
 	font-family: 'Ubuntu', sans-serif;
+	/*from uigradients.com*/
+	background: #006BB6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #006BB6, #BEC0C2, #F58426); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #006BB6, #BEC0C2, #F58426); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ul {
@@ -29,9 +40,27 @@ li:nth-child(2n){
 	background: #F7E0C1;
 }
 
+span{
+	background: #F58426;
+	height: 38px;
+	margin: 0px;
+	text-align: center;
+	width: 0px;
+	transition: 0.2s linear;
+	display: inline-block;
+	opacity: 0;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
+}
+
+
 input {
 	font-size: 18px;
 	background-color: #F7E0C1;
+	border: 3px solid #383636;
 	width: 100%;
 	padding: 12px 12px 12px 20px;
 	box-sizing: border-box;
@@ -39,7 +68,6 @@ input {
 }
 input:focus{
 	background: white;
-	border: 3px solid #383636;
 	outline: none;
 }
 
